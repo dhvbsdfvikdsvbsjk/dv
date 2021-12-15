@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<head>
+    <title>6</title>
+    <link rel="stylesheet" href="irys.js">
+</head>
+<style>
+    .a {
+      color:crimson;
+      margin-right: 50px;  
+    }
+    .container{
+max-width: 1170px;
+margin: auto;
+width: 90%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.header{
+
+    padding-bottom: 60px;
+    background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url('bg.jpg') no-repeat center top / cover;
+}
+.menu{
+list-style-type: none;
+display: flex;
+margin: 0;
+margin-left: 17px;
+}
+.menu-item {
+margin-right: 25px;
+
+}
+.user{
+    margin-left: auto;
+    color:#fff;
+    display: flex;
+    align-items: center;
+}
+.menu-link{
+    color: white;
+}
+.avatar {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin-left: 11px;
+}
+.film{
+    color: #fff;
+    margin-top: 60px;
+}
+.film-title-small{
+    opacity: 0.5;
+    font-size: 24px;
+    line-height: 150%;
+}
+.film-title{
+    font-size: 36px;
+    line-height: 42%;
+    
+}
+.film-description{
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 560px;
+}
+    .jko {
+        background-color: #621402;
+line-height: 2.5;   
+font-family: "Roboto", sans-serif;
+font-style: oblique;
+font-size:initial;
+    }
+    .g{
+        
+    }
+    .nene {
+        background-color: #FE8E05;
+    }
+    .shion {
+        background-color: #FE8E05;
+    }
+    .aqua {
+        
+    }
+    .hakos {
+        
+    }
+    .kola {
+        background-color: #FE8E05;
+    }
+    .rushia {
+background: lightgrey;
+margin-left: 30px;
+    }
+    .ymd {
+        background: lightgrey;
+        margin-left: 30px;
+    }
+</style>
+<body class="jko">
+    <header class="header container">
+        <div class="navbar">
+            <a href="/">
+                <img src="logo.png" alt="logo" />
+            </a>
+            <nav class="nav">
+
+                <ul class="menu">
+                    <li class="menu-item">
+                        <p class="menu-link">Главная</p>
+                    </li>
+                    <li class="menu-item">
+                        <p class="menu-link">Фильмы</p>
+                    </li>
+                    <li class="menu-item">
+                        <p class="menu-link">Кинотеатры</p>
+                    </li>
+                    <li class="menu-item">
+                        <p class="menu-link">События</p>
+                    </li>
+                    <li class="menu-item">
+                        <p class="menu-link">Поддержка</p>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user">
+                <span class="">Привет мила</span>
+                <img class="avatar" src="1.png" alt="ava" />
+            </div>
+        </div>
+        <div class="film">
+            <div class="film-info">
+<small class="film-title-small">Avengers: Infinity War</small>
+<h1 class="film-title">Мстители: война бесконечности</h1>
+<p class="film-description">Пока Мстители и их союзники продолжают защищать мир от различных опасностей, 
+с которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос. 
+Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности - артефакты невероятной силы, 
+с помощью которых можно менять реальность по своему желанию. Всё, с чем Мстители сталкивались ранее, 
+вело к этому моменту – судьба Земли никогда ещё не была столь неопределённой.
+
+</p>
+    <h1 class="g"><center>Калькулятор стоимости билета</center></h1>
+    <div class="er">
+        <div id="sp" >Выбор фильма</div>
+        <select id ="ila" class="nene" name="Месяц">
+            <option id="f1" class="ae1" value="Филь1" >Фильм-1</option>
+            <option  id="f2" class="ae2" value="Филь2">Фильм-2</option>
+            <option  id="f3" class="ae3" value="Филь3">Фильм-3</option>           
+          </select>
+          <br>
+        номер сидения в кинотеатре от 1-20 и с 21-56:
+        <input id="num" type="text" class="aqua" value="">
+        <br>
+        выбор кинотеатра 
+        <div id="ya" type="text"  value=""></div>
+        <select id="reru"name="Кинотеатр" class="shion">
+            <option id="kn" class="ae1" value="Кинотеатр" >Кинотеатр</option>
+            <option  id="tk" class="ae2" value="Театркино">Театркино</option>
+            <option  id="no" class="ae3" value="Нокиатреа">Нокиатреа</option>           
+          </select>
+        <br>
+        Количество билетов 
+        <input id="elz" type="text" class="hakos" value="">
+        <div class="sna">Время длительности фильма</div>
+        <select id="lll" class="kola" name="Дополнительная услуга">
+            <option id="f" value="пть">58минут</option>
+            <option id="v" value="вмь">180минут</option>
+            <option id="d" value="двс">240минут</option>
+          </select>
+    </div>
+  
+    <button class="rushia">Расчитать</button>
+    <button class="ymd" id="laplase">Очистить</button>
+    <div class="r3">
+        Сумма к оплате <input id="feris" type="text" class="a" value="">
+    </div>
+    <script src="irys.js">
+     
+    </script>
+</body>
+</html>
